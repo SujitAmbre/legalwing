@@ -630,6 +630,12 @@ section.outer.call-back-btn {background: #e95c24;padding: 25px;}
 @media (min-width: 768px) and (max-width: 991px) {
   .call-back-btn-main.wrapper .call-back:nth-child(1) {padding-left: 0 !important;}
   .call-back-btn-main.wrapper {column-gap: 25px;min-width: 100%;max-width: 100%;}
+  .call-back:nth-child(1) p a {font-size: 1.7em;}
+  .whys-col {max-width: 40%;flex: 0 0 40%;}
+  .why-us-wrapper{justify-content: center;}
+}
+@media screen and (max-width: 767px) {
+  .call-back:nth-child(1) p a {font-size:2rem;}
 }
 /*-------------callback------------------*/
 /*-----------four star section -------------*/
@@ -658,15 +664,23 @@ section.cost-calculator-sec { background-color: #323074; padding: 60px 0; }
 .input-div select option {color: #000;}
 .lable-div label { font-size: 1.3rem; line-height: 2rem; color: #fff; font-weight: 500; }
 .lable-div {margin-bottom: 15px;}
+@media screen and (min-width: 992px) and (max-width: 1199px)
+{
+  .cal-input {flex: 0 0 45.2%;max-width: 45.2%;}
+}
 /*.Calcutor-input-main.wrapper {margin: 0 auto;}*/
 /*------------- calculator section end ------------------*/
 /*============why us ====================*/
 .whys-col { max-width: 27%; flex: 0 0 27%; border: 1px solid red; padding: 25px; border-radius: 32px; margin-bottom: 30px; text-align: center; }
-.why-us-wrapper {column-gap: 22px;}
+.why-us-wrapper {column-gap: 22px;justify-content: center;}
 .whys-col h4 { font-size: 21px; line-height: 30px; margin-bottom: 15px; }
 .wrapper.why-us-heading { justify-content: center; padding-bottom: 50px; }
 .why-us-heading h3 { color: #323074; font-size: 2.4rem; line-height: 3rem; }
 section.outer.why-us-outer {padding-top: 50px;padding-bottom: 50px;}
+@media screen and (max-width: 767px) {
+  .whys-col {max-width: 75%;flex: 0 0 75%;}
+  .wrapper.why-us-wrapper {justify-content: center;}
+}
 /* ------ Homepage Article ---------- */
 .outer.article-section-outer{padding: 120px 0px 50px;}
 .wrapper.article-wrapper{justify-content: space-between;}
@@ -739,7 +753,7 @@ section.outer.timeline-maine {padding-top: 80px;padding-bottom: 80px;}
   .timeline-detail {max-width: 230px;}
 }
 @media (min-width: 992px) and (max-width: 1199.9px) {
-    section.outer.timeline-maine {padding-top: 110px;}
+    section.outer.timeline-maine {padding-top: 20px;}
     section.outer.contact-employee-section {padding-top: 110px;padding-bottom: 80px;}
     .timeline-description {padding-bottom: 65px;}
      .timeline-info p {font-size: 20px;line-height: 27px;}
@@ -869,7 +883,7 @@ footer{background: #323074;}
   .ft-address p.address{
     font-size: 16px;
     line-height: 22px;
-    margin-left: 52px;
+    margin-left: 0px;
   }
   .footer-col:nth-child(3) {
     flex: 0 0 33.5%;
@@ -951,7 +965,7 @@ p.location {font-size: 1.2em;padding-bottom: 7px;}
 .employee-main:nth-child(1) .box-back {background: #e95c24;}
 .employee-main:nth-child(2) .box-back {background: #323074;}
 .employee-main:nth-child(3) .box-back {background: #e95c24;}
-.outer.reference-outer{/*padding: 100px 0px 150px;*/position:relative;overflow:hidden;background: #FFFFFF;}
+.outer.reference-outer{position:relative;overflow:hidden;background: #FFFFFF;}
 .article-description {background: #e95c24;}
 .reference-outer .owl-carousel .owl-item img {border-radius: 72%;border: 2px solid #fff;}
 .wrapper.douemt-wrapper {display: block;padding: 70px 0;}
@@ -968,6 +982,10 @@ figure {max-width: 40%;flex: 0 0 40%;}
 }
 @media (max-width: 1200px) {
   html, body {max-width: 100%;overflow-x: hidden;}
+}
+@media screen and (max-width: 767px){
+  .wrapper.douemt-wrapper h2 {font-size: 2rem;}
+  .document-list {align-items: center;width: 88%;justify-content: center;}
 }
 /* ------ reefrencer section css end ---------- */
 .coutner-block .call-back {flex: 0 0 30%;max-width: 30%;}
@@ -1020,7 +1038,7 @@ figure {max-width: 40%;flex: 0 0 40%;}
   /* -----------Partner logo section css ----------- */
   .wrapper.partner-wrapper{column-gap: 20px;}
   .partner-logo{justify-content: center;display: flex;align-items: center;height: 57px;}
-  .partner-logo img{width: 145px;height: auto;;}
+  .partner-logo img{width: 145px;height: auto;}
   /* -----------Partner logo section css end----------- */
   
   /* -----------Contact Form section css ----------- */
@@ -1213,10 +1231,10 @@ a.list-link svg{width: 31.37px;height: 13px;;}
 .article-description p.brodtext-regular{font-size: 16px;line-height: 22px;}
 .ref-article a.article-link{font-size: 16px;line-height: 20px;}
 .all-references a.refernces-link{font-size: 16px;line-height: 20px;margin: 55px 0px 50px;}
-.all-references .refernces-link svg{width: 31px;height: 15px;;}
+.all-references .refernces-link svg{width: 31px;height: 15px;}
 .wrapper.reference-wrapper{position: relative;}
 .swiper-c{display: block;position: absolute;z-index: 12;top: 142px;}
-
+}
 /* -----Reference Project section css end---------- */
 
 /* ----------- Testimonial Section css end---------- */
@@ -1231,7 +1249,7 @@ a.list-link svg{width: 31.37px;height: 13px;;}
   .call-back:nth-child(3) { flex: 0 0 40.1%; max-width: 40.1%; }
   .call-back:nth-child(2) { flex: 0 0 40.1%; max-width: 40.1%; }
   .call-back:nth-child(1) { flex: 0 0 100%; max-width: 100%; padding-left: 0;padding-bottom: 40px;}
-  .cal-input { flex: 0 0 29%; max-width: 29%;}
+  .cal-input { flex: 0 0 100%; max-width: 100%;}
   .coutner-block {min-width: 100%;max-width: 100%;}
   .coutner-block .call-back:nth-child(2) {padding-bottom: 50px;max-width: 50%;flex: 0 0 50%;}
   .coutner-block .call-back:nth-child(1) { padding-left: 0; max-width: 50%; flex: 0 0 50%; }
@@ -1239,5 +1257,8 @@ a.list-link svg{width: 31.37px;height: 13px;;}
   .document-col-main {display: block;padding-left: 25px;}
   .doc-col-1 { flex: 0 0 100%; max-width: 100%;}
   .employee-main {width: 100%;}
+  .input-div input {width:94%;}
+  .Calcutor-input-main.wrapper {max-width: 85%;min-width: 85%;}
+  .input-div select {width: 96%;}
 }
 
